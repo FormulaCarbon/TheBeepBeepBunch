@@ -1,0 +1,22 @@
+{%extends "base.html"%}
+{%block content%}
+
+<h1> Contact Us! </h1>
+<form method = 'post'>
+    <div class="form-group">
+      <label for="EmailInput">Email address</label>
+      <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email" name = 'userEmail'>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="Topic">Topic</label>
+      <input type="text" class="form-control" id="Topic" placeholder="What are you contacting us for?" name = 'topic'>
+    </div>
+    <!--<div class="form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>-->
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+  </form>
+
+{%endblock%}
